@@ -1,0 +1,168 @@
+/* My CSS Style! */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1a5276;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+form {
+    margin: 0 auto;
+    width: 50%;
+}
+
+figure {
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+nav {
+    background-color: #154360;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #1d6fa5;
+}
+
+nav .logout a:hover {
+    background-color: #b03a2e;
+}
+
+nav .logout {
+    float: right;
+}
+
+nav .login a:hover {
+    background-color: #27ae60;
+}
+
+nav .login {
+    float: right;
+}
+
+nav .signup a:hover {
+    background-color: #27ae60;
+}
+
+nav .signup {
+    float: right;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button {
+    color: #fff;
+    background-color: #1a5276;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #154360;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #1a5276;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
