@@ -14,7 +14,7 @@ a CRITICAL file is not included in this repo for security purposes. connect-DB.p
   
     <?php
     $databaseName = 'XXXXXXXXXXX';
-    $dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
+    $dsn = 'linking to the database' . $databaseName;
     $username = 'XXXXXXXXXXX';
     $password = 'XXXXXXXXXXX';
     $pdo = new PDO($dsn, $username, $password);
