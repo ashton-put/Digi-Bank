@@ -1,34 +1,30 @@
-# Ashton Putnam
-## CS 2300-A Module 3 Open-Ended Project
+# Digi-Bank
+## A website project by Ashton Putnam
 
-### Necessary Installations:
-* Visit this website and create an account: https://alputnam.w3.uvm.edu/cs2300/M3OEP-alputnam/digibank.php
+* add link to website here
 
-### Summary of Program
-This version of my banking program utilizes a similar structure to the testing website guided project and other in-class website activities such as the Hamilton activity. The C++ code from M2OEP is utilized as a rough outline for the PHP code which handles the transactions in addition to updating the database tables. New users must make an account to perform transactions. These transactions being deposit funds into their account, withdraw funds from their account, and transfer (wire) funds to another account. The webpage also has a PHP login/sign up feature which allows new users to create an account which will be added to the database, or login to an account they have previously created. Once logged in, each page remembers the user who logged in and transactions on their account can be performed. 
+### Summary
+This website is a product of the Advanced Programming course I'm taking at the University of Vermont. The program builds upon the website structure learned in Prof. Robert Ericksons Intro to Web Development and Database Design for the Web classes. The website is an excercise in using multiple progamming languages to accomplish the goal of providing users with software that fits their needs by providing a necessary service. Digi-Bank is a simple banking website that enables users to create accounts and track debits and credits to their account. While not as sophisticated as actual banking software, the website is a step in that direction. User accounts are kept in a SQL database and thier passwords are hashed and stored along with information about deposits into their account and withdrawals from their account. Users can interact with each other by wiring funds to other Digi-Bank accounts within the database. Users can access account summaries and fill out forms to accomplish different types of transactions. The website is built using exclusively PHP, HTML, and CSS. I really enjoy working with these languages but I plan on learning some modern web frameworks over the summer of 2024 to improve my viability in the web development industry. 
 
-### Languages Used
-* HTML
-* PHP
-* CSS
-* MySQL
+### Note:
+a CRITICAL file is not included in this repo for security purposes. connect-DB.php is necessary for connecting to the database and accessing the tools required to read data and write data. The file should follow this structure:
 
-### Which language the program starts in
-The program starts in a mix of HTML, PHP, and CSS with the digibank home page. Then begins using MySQL as needed to login to an account, sign up, and perform each transaction one within the protected home page. 
+''' PHP
+<!-- Connecting -->
+<?php
+$databaseName = 'XXXXXXXXXXX';
+$dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
+$username = 'XXXXXXXXXXX';
+$password = 'XXXXXXXXXXX';
 
-### How I use each language
-I use HTML and CSS to give the page a good layout and design. I use PHP to handle backed logic and actions once performed by my C++ code in the M2OEP. MySQL is used to fetch data for users from a database table or write data to specific database tables.
+$pdo = new PDO($dsn, $username, $password);
+?>
+<!-- Connection Complete -->
 
-### How the languages are connected
-HTML and CSS are interconnected as expected to provide structure and style ot the webpages. PHP handles connecting multiple files together, performing transaction logic, and calls MySQL code to perform operations on the database tables as needed. 
+'''
 
-### Other
-* No known bugs
-* Future work: make sure all input is completely validated (pretty sure its all good), update the CSS, update DB tables to record more data
-* Citations for any code that is not mine or instructors: majority of code based upon Intro to Web Dev and Database Design for the Web.
-* Grade I think I earned: B
 
-### Sources and Such
+### Sources
 * favicon logo from: https://favicon.io/emoji-favicons/bank
 
 
