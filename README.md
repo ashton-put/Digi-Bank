@@ -11,14 +11,15 @@ a CRITICAL file is not included in this repo for security purposes. connect-DB.p
 
 ...
   '''php
+  
     <?php
     $databaseName = 'XXXXXXXXXXX';
     $dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
     $username = 'XXXXXXXXXXX';
     $password = 'XXXXXXXXXXX';
-    
     $pdo = new PDO($dsn, $username, $password);
     ?>
+    
   '''
 ...
 
