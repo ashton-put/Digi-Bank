@@ -9,16 +9,18 @@ This website is a product of the Advanced Programming course I'm taking at the U
 ### Note:
 a CRITICAL file is not included in this repo for security purposes. connect-DB.php is necessary for connecting to the database and accessing the tools required to read data and write data. The file should follow this structure:
 
-'''
-<?php
-$databaseName = 'XXXXXXXXXXX';
-$dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
-$username = 'XXXXXXXXXXX';
-$password = 'XXXXXXXXXXX';
-
-$pdo = new PDO($dsn, $username, $password);
-?>
-'''
+...
+  '''php
+    <?php
+    $databaseName = 'XXXXXXXXXXX';
+    $dsn = 'mysql:host=webdb.uvm.edu;dbname=' . $databaseName;
+    $username = 'XXXXXXXXXXX';
+    $password = 'XXXXXXXXXXX';
+    
+    $pdo = new PDO($dsn, $username, $password);
+    ?>
+  '''
+...
 
 
 ### Sources
