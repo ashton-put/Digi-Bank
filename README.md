@@ -12,9 +12,11 @@ a CRITICAL file is not included in this repo for security purposes. connect-DB.p
 ...
   '''php
   
+    connect-DB.php
+    
     <?php
     $databaseName = 'XXXXXXXXXXX';
-    $dsn = 'linking to the database' . $databaseName;
+    $dsn = 'mysql:host=[start of website URL];dbname=' . $databaseName;
     $username = 'XXXXXXXXXXX';
     $password = 'XXXXXXXXXXX';
     $pdo = new PDO($dsn, $username, $password);
